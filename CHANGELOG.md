@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.1.0 - _2019-11-29_
+
+- Improving src mapping
+
 ## 1.1.0 - _2019-11-25_
 
 - Fixing docfx build

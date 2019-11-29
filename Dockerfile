@@ -15,4 +15,4 @@ RUN nuget install memberpage -OutputDirectory /docfx/plugins && \
     nuget install rest.tagpage -OutputDirectory /docfx/plugins && \
     nuget install rest.operationpage -OutputDirectory /docfx/plugins
 WORKDIR /docfx
-CMD [ "/bin/bash", "-c", "typedoc --json api.json /src --module commonjs --includeDeclarations --ignoreCompilerErrors --excludeExternals && type2docfx api.json yml && docfx ./docfx.json build" ]
+CMD [ "/bin/bash", "-c", "typedoc --json api.json /app/src --module commonjs --includeDeclarations --ignoreCompilerErrors --excludeExternals && type2docfx api.json yml && docfx ./docfx.json build" ]

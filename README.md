@@ -11,12 +11,14 @@ You can build your document code with the following command:
 ```sh
 docker run --rm --name docfx \
 -v path-to-docs-folder:/docfx \
--v path-to-src-if-apply:/src \
+-v path-to-src-if-apply:/app \
     dynamicdevs/docfx-ts:latest
 ```
 
 ### **Important**
 
+- You must include in the `app` directory the `node_modules` directory
+- your source code mus be on `src` directory into `app` directory in the container
 - You should map document directory into `/docfx` directory.
 - `docfx.json` and `node2docfx.json` files should be in the same directory
 - Whether your `src` folder is into directory `/docfx` folder don't map the `src` volume
