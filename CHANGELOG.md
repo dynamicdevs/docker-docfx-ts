@@ -1,8 +1,8 @@
 # CHANGELOG
 
-## 1.1.0 - _2019-11-29_
+## 1.2.0 - _2019-11-29_
 
-- Improving src mapping
+- Improving `src` directory mapping
 
 ## 1.1.0 - _2019-11-25_
 
